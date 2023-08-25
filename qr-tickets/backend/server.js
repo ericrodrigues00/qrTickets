@@ -8,7 +8,8 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/qrTickets', {
+mongoose.connect('mongodb+srv://adminticket:admin@clusterblazed.3ea9fri.mongodb.net/qrTickets', {
+
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
